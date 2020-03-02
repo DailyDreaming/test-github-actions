@@ -1,0 +1,5 @@
+.cache/
+.idea/
+venv/
+v3nv/
+__pycache__/
