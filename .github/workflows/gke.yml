@@ -71,5 +71,4 @@ jobs:
       run: |
         gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE --project $GKE_PROJECT
         kubectl get pods -o wide
-        kubectl get pod runner
-        kubectl exec runner -- ls
+        kubectl exec nginx -- ls
