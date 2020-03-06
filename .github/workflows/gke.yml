@@ -70,4 +70,5 @@ jobs:
     - name: Deploy
       run: |
         gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE --project $GKE_PROJECT
-        kubectl exec ls
+        kubectl get pod runner
+        kubectl exec runner -- ls
